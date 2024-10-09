@@ -23,6 +23,6 @@ prediction = model.predict(img)
 print(f"The number is probably a {np.argmax(prediction)}")
 
 # use matplotlib to display our image in a canvas with
-# the x and y axis going from 0 - 26
+# the x and y axis going from 0 - 28
 plt.imshow(img.reshape(28, 28), cmap=plt.cm.binary)
 plt.show()
