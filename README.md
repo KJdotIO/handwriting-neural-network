@@ -185,7 +185,7 @@ When we finally build our model, we get this output from Keras. There are a bunc
 The first thing you may notice is that, we dont actually see $10,000$ for our test, and $60,000$ for our training data. Why is that? Earlier we talked about SGD and why its better. SGD divides our training and test data into mini batches, which updates our weights more frequently and allows us to refine our neural network more efficiently. We can work our how much we are dividing our test and training data by. Our first output gives us $313$, which is our test data. We have 10,000 images for testing. We can work out our batch size by doing:
 
 $$
-313 = \frac{10,000}{x} \longrightarrow 313 = 10,000 \longrightarrow x = \frac{10,000}{313}
+313 = \frac{10,000}{x} \longrightarrow 313x = 10,000 \longrightarrow x = \frac{10,000}{313}
 $$
 
 Here, we get $x \approx 32$ items per batch.
